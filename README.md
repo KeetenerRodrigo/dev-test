@@ -7,12 +7,15 @@ It is an app requested as a test to enter the company 4cadia.
 The goal of the project is to create an app that performs user registration, login and shows the user's statement and balances. At first we create the entire login register that inserts in the postgres database with a unique id and then with static values ​​in the financial report create the front end of the application. 
 
 ### LOCAL INSTALLATION
-• Install the docker, postgres and git;
-• On your local server download the project using `git clone`.
-• With the project open, type in the `yarn install` terminal to install the libraries;
-• Run this command on your terminal `docker run --name finance_postgress -e POSTGRES_PASSWORD=docker -p 5434:5432 -d postgres`, this command starts the database container;
-• Now, for it to run correctly, enter the backend folder via the terminal and type `yarn dev: server`, after that enter
-in the frontend folder and type `yarn start`
+* Install the docker, postgre and git.
+
+* On your local server download the project using `git clone`.
+* With the project open, type in the `yarn install` terminal to install the libraries.
+
+* Run this command on your terminal `docker run --name finance_postgress -e POSTGRES_PASSWORD=docker -p 5434:5432 -d postgres`, this command starts the database container.
+
+* Now, for it to run correctly, enter the backend folder via the terminal and type `yarn dev: server`, after that enter
+in the frontend folder and type `yarn start`.
 
 ### PROJECT LIBRARIES
 * We use [Typescript] (https://www.typescriptlang.org/) with node on the backend and react frontend, as we consider it a current and easy-to-use tool that is constantly growing, in addition to showing us a strongly "typed" language that makes life a lot easier.
