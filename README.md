@@ -1,101 +1,34 @@
-# O trabalho por aqui na 4CADIA Factory
+# Finance Api - Quick start guide
 
-Que tal fazer parte de um time com atitude? Participar de uma das maiores disrupções no mercado? Ter a oportunidade de trabalhar com tecnologias e conceitos inovadores, como:
+### Which is
+It is an app requested as a test to enter the company 4cadia.
 
-* Práticas ágeis como Kanban / Scrum
-* Blockchain
-* AWS
-* Escalabilidade
-* Micro services e aplicações distribuídas
-* Git
-* Angular/React/Vue
-* NodeJS/NestJS/Express
-* Bootstrap/Material Design
-* TDD
-* BDD
+### TO WHOM IT IS INTENDED / OBJECTIVE
+The goal of the project is to create an app that performs user registration, login and shows the user's statement and balances. At first we create the entire login register that inserts in the postgres database with a unique id and then with static values ​​in the financial report create the front end of the application. 
 
-# Tecnologias/Padrões
+### LOCAL INSTALLATION
+• Install the docker, postgres and git;
+• On your local server download the project using `git clone`.
+• With the project open, type in the `yarn install` terminal to install the libraries;
+• Run this command on your terminal `docker run --name finance_postgress -e POSTGRES_PASSWORD=docker -p 5434:5432 -d postgres`, this command starts the database container;
+• Now, for it to run correctly, enter the backend folder via the terminal and type `yarn dev: server`, after that enter
+in the frontend folder and type `yarn start`
 
-Devem ser utilizadas as seguintes tecnologias :
+### PROJECT LIBRARIES
+* We use [Typescript] (https://www.typescriptlang.org/) with node on the backend and react frontend, as we consider it a current and easy-to-use tool that is constantly growing, in addition to showing us a strongly "typed" language that makes life a lot easier.
 
-* Linguagem de programação Typescript (preferencialmente) ou Javascript
-* Qualquer Framework de estilo 
-* Vue.js, React ou Angular 2+
-* Flux (Redux, Vuex, etc)
-* NodeJS, NestJS e/ou Express
-* Testes (Que achar necessário)
-* MongoDB, Postgre, CassandraDB, Redis, ou qualquer outra tecnologia NoSQL similar (se necessário)
-* Qualquer tecnologia ou padrão complementar as citadas anteriormente são permitidas com as devidas justificativas no README.
+* MySql database and the manager is [PostgreSQL] (https://www.postgresql.org/). PostgreSQL is one of the most used managers, as it is super simple and scalable.
 
-Caso tenha familiaridade com outras tecnologias e queira utilizar no lugar de alguma dessas, favor justificar no README juntamente com o motivo e prós e contras.
-Temos preferência pelas linguagens (em ordem decrescente de utilização):
+* For the management of object relationships with the database, the [Typeorm] (https://typeorm.io/) was used, we believe that the typeorm is better in production because it has two functions that the other ORM'S do not have Active Record and Data Mapper in addition to being easy to use.
 
-* C# e/ou .net
-* Go
-* Python
-* C, C++, Rust e/ou afins
-* Java
-* Ruby
-* PHP
+* For code standardization and perfumery ESLint, Prettier and Editor Config were used. That in teams generates a certain standardization in the codes as declarations of variables and even the annoying problem with ";".
 
-# A Prova
+### WOULD LIKE TO BE EVALUATED BY
+For the quality of the writing and the architecture of the software.
+----------------------------
+#### IF YOU GOT HERE
+Thank you very much for the opportunity, may God bless you a lot and I hope to be part of the team and grow a lot with the company.
 
-Você será avaliado pela qualidade do código, pela modularidade, pela legibilidade, pela criatividade, pela quantidade de funcionalidades básicas e extra.
-
-## Prazo de entrega
-
-Prazo 1 semana.
-
-## Crie uma Single Page para um Open Banking (Você cria o layout e nome, os textos pode utilizar Lorem Ipsum). 
-
-O layout e por sua conta, seja criativo.
-Qualquer funcionalidade extra é bem vinda para agregar na solução básica proposta.
-
-Vincule na single page a aplicação solicitada abaixo, redirecionando para Login.
-
-## Crie uma API onde terá os seguintes metodos:
-
-* Register
-* Login
-* Extrato
-* Saldos
-
-## Desenvolva uma aplicação frontend para vinculo das APIs, deve conter, Registro, Login, Dashboard(com saldos) e Extrato de movimentos.
-
-O layout e por sua conta, seja criativo.
-Qualquer funcionalidade extra é bem vinda para agregar na solução básica proposta.
-
-## Crie o banco de dados de sua escolha para administrar as informações.
-
-# Arquitetura da solução/O que fazer
-
-No arquivo README do projeto explique o funcionamento e a solução adotada na sua implementação do desafio.
-É permitido utilizar templates, livrarias e componentes prontos de outros projetos, porém precisam estar **explicitamente** descritos no README.
-
-**Importante:** Favor destacar no README os pontos positivos nos quais você deseja ser avaliado, e evidenciar quais as partes você gostaria de excluir da avaliação. Isso permite que você complete o teste mais rapidamente se desejar, dando atenção somente a algumas àreas específicas, sem grandes prejuízos à sua avalização de qualidade do código.
-
-## Avaliação
-
-Os principais critérios de avaliação são:
-
-* Usabilidade
-* Raciocínio lógico na construção da solução
-* Qualidade de código
-* Documentação do projeto (readme)
-* Performance
-
-Serão avaliados também os critérios de:
-
-* Criatividade
-* Documentação de código
-* Responsividade
-* Acessibilidade
-* Apresentação visual
-* Cobertura de testes
-
-## Sugestões
-
-* Utilizar o [Lighthouse](https://developers.google.com/web/tools/lighthouse) (ou similar) para medir a qualidade da aplicação
-* Utilizar as *badges* no readme ([sugestão](https://github.com/dwyl/repo-badges)) para indicar a cobertura de testes, status de build, vulnerabilidades e afins
-* Utilizar o [Swagger](https://swagger.io/) ou similar para facilitar os testes e documentação das APIs (se necessário)
-* Utilizar o Inglês como linguagem padrão para o código e documentação
+#### ABOUT THE AUTHOR / ORGANIZER
+Keetener Rodrigo Machado Costa
+keetenermachado99@gmail.com
