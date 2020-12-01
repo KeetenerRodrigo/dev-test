@@ -1,9 +1,0 @@
-{
-    "name": "financeapi4cadia",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT",
-    "scripts": {
-        "start": "ts-node backend/src/server.ts"
-    }
-}
